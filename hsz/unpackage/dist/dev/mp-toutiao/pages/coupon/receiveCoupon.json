@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "领券大厅",
+  "usingComponents": {
+    "mix-loading": "/components/mix-loading/mix-loading",
+    "mescroll-body": "/components/mescroll-uni/mescroll-body"
+  }
+}

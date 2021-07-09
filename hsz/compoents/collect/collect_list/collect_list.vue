@@ -1,6 +1,8 @@
 <template>
-	<view>
-		
+	<view class="collect_list_page">
+		<view class="collect_list-box">
+			
+		</view>
 	</view>
 </template>
 

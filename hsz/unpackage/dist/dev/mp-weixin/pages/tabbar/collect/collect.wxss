@@ -1,0 +1,30 @@
+.collect_page {
+  width: 100%;
+}
+.collect_page .shou_page {
+  width: 495rpx;
+  margin: 76rpx auto 0;
+}
+.collect_page .shou_page image {
+  width: 400rpx;
+  height: 269rpx;
+  margin: 0 auto;
+  display: block;
+}
+.collect_page .shou_page ._h4 {
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 29rpx;
+}
+.collect_page .shou_page .shou_box {
+  width: 100%;
+  height: 54rpx;
+  border-radius: 25rpx;
+  background-color: #fe5858;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 54rpx;
+  margin-top: 54rpx;
+  font-size: 26rpx;
+}
+

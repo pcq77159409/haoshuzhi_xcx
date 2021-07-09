@@ -1,4 +1,7 @@
 {
+  "navigationStyle": "custom",
   "navigationBarTitleText": "咨询",
-  "usingComponents": {}
+  "usingComponents": {
+    "head-page": "/compoents/head/headPage/headPage"
+  }
 }

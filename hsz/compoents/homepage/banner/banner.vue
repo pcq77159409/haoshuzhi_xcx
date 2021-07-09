@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<image src="" mode=""></image>
+		<!-- <image src="../../../static/home/banner.png" mode=""></image> -->
 	</view>
 </template>
 

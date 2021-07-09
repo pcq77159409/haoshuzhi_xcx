@@ -1,6 +1,6 @@
 <template>
-	<view>
-		
+	<view class="home_box">
+		<view class="shang_box"></view>
 	</view>
 </template>
 
@@ -15,5 +15,4 @@
 </script>
 
 <style lang="less">
-
 </style>

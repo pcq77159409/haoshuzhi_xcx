@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		<image src="" mode=""></image>
 	</view>
 </template>
 

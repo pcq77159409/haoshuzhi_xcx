@@ -1,8 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "navigationBarTitleText": "分类",
-  "disableScroll": true,
-  "usingComponents": {
-    "page-header": "/pages/tabbar/components/page-header"
-  }
-}

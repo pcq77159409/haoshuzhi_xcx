@@ -42,6 +42,15 @@
             }
             
         }
+        ,{
+            "path" : "compoents/homepage/like/like/like",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

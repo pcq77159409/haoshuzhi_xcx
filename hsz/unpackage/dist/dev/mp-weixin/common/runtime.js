@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"compoents/head/headPage/headPage":1};
+/******/ 		var cssChunks = {"compoents/homepage/tabrNumber/tabrNumber":1,"compoents/head/headPage/headPage":1,"compoents/homepage/banner/banner":1,"compoents/homepage/phoneNumber-list/phoneNumber-list":1,"compoents/collect/collect-list/collect-list":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"compoents/head/headPage/headPage":"compoents/head/headPage/headPage"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"compoents/homepage/tabrNumber/tabrNumber":"compoents/homepage/tabrNumber/tabrNumber","compoents/head/headPage/headPage":"compoents/head/headPage/headPage","compoents/homepage/banner/banner":"compoents/homepage/banner/banner","compoents/homepage/phoneNumber-list/phoneNumber-list":"compoents/homepage/phoneNumber-list/phoneNumber-list","compoents/collect/collect-list/collect-list":"compoents/collect/collect-list/collect-list"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

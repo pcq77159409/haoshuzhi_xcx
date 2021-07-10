@@ -1,0 +1,1 @@
+<view class="tabr_box"><block wx:for="{{tabrlist}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="tab"><image src="{{item.src}}" mode></image><text>{{item.text}}</text></view></block></view>

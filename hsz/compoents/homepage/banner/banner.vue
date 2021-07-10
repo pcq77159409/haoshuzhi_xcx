@@ -1,6 +1,6 @@
 <template>
-	<view>
-		<!-- <image src="../../../static/home/banner.png" mode=""></image> -->
+	<view class="banner_box">
+		<image src="../../../static/home/banner.png" mode=""></image>
 	</view>
 </template>
 
@@ -15,5 +15,16 @@
 </script>
 
 <style lang="less">
-
+	.banner_box {
+		width: 707rpx;
+		height: 271rpx;
+		position: absolute;
+		left: 22rpx;
+		top: 236rpx;
+		image {
+			width: 707rpx;
+			height: 271rpx;
+			display: block;
+		}
+	}
 </style>

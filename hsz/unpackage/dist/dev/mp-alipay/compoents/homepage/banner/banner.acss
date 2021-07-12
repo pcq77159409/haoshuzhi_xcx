@@ -1,0 +1,13 @@
+.banner_box {
+  width: 707rpx;
+  height: 271rpx;
+  position: absolute;
+  left: 22rpx;
+  top: 236rpx;
+}
+.banner_box image {
+  width: 707rpx;
+  height: 271rpx;
+  display: block;
+}
+

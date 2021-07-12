@@ -3,12 +3,12 @@
 		<headPage :username="'收藏'"></headPage>
 		<view class="collect_page">
 			<view class="shou_page">
-				<image src="../../../static/collect/图层%201@2x.png" mode=""></image>
+				<image src="../../../static/collect/图层%201@2x.png" mode="aspectFit"></image>
 				<h4>您暂时还没有添加收藏呢，快去选择心仪的收藏吧</h4>
 				<view class="shou_box">去收藏~</view>
 			</view>
 		</view>
-		<collect-list  v-show="false"></collect-list>
+		<collect-list  v-if="false"></collect-list>
 	</view>
 </template>
 

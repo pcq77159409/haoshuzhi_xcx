@@ -1,7 +1,7 @@
 <template>
 	<view class="collect_list_page">
 		<view class="collect_list-box">
-			<image src="../../../static/home/矩形%2047@2x.png" mode=""></image>
+			<image src="../../../static/home/矩形%2047@2x.png" mode="aspectFit"></image>
 			<view class="number">{{phoneNumber}}</view>
 			<view class="move_box">
 				<text>{{move}}</text>

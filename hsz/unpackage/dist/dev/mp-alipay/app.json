@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/tabbar/home/home",
+    "pages/tabbar/my/my",
+    "pages/tabbar/collect/collect",
+    "pages/tabbar/category/category",
+    "pages/tabbar/consult/consult"
+  ],
+  "subPackages": [],
+  "window": {
+    "titleBarColor": "#ea5656",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "textColor": "#C0C4CC",
+    "selectedColor": "#ea5656",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/tabbar/home/home",
+        "name": "首页",
+        "icon": "static/tabbar/tab-home.png",
+        "activeIcon": "static/tabbar/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/tabbar/category/category",
+        "name": "类别",
+        "icon": "static/tabbar/tab-cate.png",
+        "activeIcon": "static/tabbar/tab-cate-current.png"
+      },
+      {
+        "pagePath": "pages/tabbar/consult/consult",
+        "name": "咨询",
+        "icon": "static/tabbar/tab-cart.png",
+        "activeIcon": "static/tabbar/tab-cart-current.png"
+      },
+      {
+        "pagePath": "pages/tabbar/collect/collect",
+        "name": "收藏",
+        "icon": "static/tabbar/tab-cart.png",
+        "activeIcon": "static/tabbar/tab-cart-current.png"
+      },
+      {
+        "pagePath": "pages/tabbar/my/my",
+        "name": "我的",
+        "icon": "static/tabbar/tab-user.png",
+        "activeIcon": "static/tabbar/tab-user-current.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -3,28 +3,28 @@
 		<view class="big_box">
 			<view class="shang_box">
 				<view class="ShangHai">
-					<image src="../../../static/home/wei.png" mode=""></image>
+					<image src="../../../static/home/wei.png" mode="aspectFit"></image>
 					<text>上海</text>
 				</view>
 				<view class="good">好数智</view>
 			</view>
 			<view class="input_bg">
-				<image src="../../../static/home/search.png" mode=""></image>
+				<image src="../../../static/home/search.png" mode="aspectFit"></image>
 				<input type="text" placeholder="请输入您要搜索的内容"/>
 			</view>
 			<banner></banner>
 			<tabrNumber></tabrNumber>
-			<image src="../../../static/home/content.png" mode="" class="cont"></image>
+			<image src="../../../static/home/content.png" mode="aspectFit" class="cont"></image>
 			<view class="grey"></view>
 			<view class="seckill">
 				<view class="separator">
 					<view class="special">
-						<image src="../../../static/home/time.png" mode=""></image>
+						<image src="../../../static/home/time.png" mode="aspectFit"></image>
 						<h4>特价专场</h4>
 					</view>
 					<view class="more">
 						<text>更多</text>
-						<image src="../../../static/home/right.png" mode=""></image>
+						<image src="../../../static/home/right.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<phoneNumber-list></phoneNumber-list>
@@ -33,12 +33,12 @@
 			<view class="like">
 				<view class="separator">
 					<view class="special">
-						<image src="../../../static/home/love.png" mode=""></image>
+						<image src="../../../static/home/love.png" mode="aspectFit"></image>
 						<h4>猜你喜欢</h4>
 					</view>
 					<view class="more">
 						<text>更多</text>
-						<image src="../../../static/home/right.png" mode=""></image>
+						<image src="../../../static/home/right.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<like></like>
@@ -47,12 +47,12 @@
 			<view class="seckill">
 				<view class="separator">
 					<view class="special">
-						<image src="../../../static/home/good.png" mode=""></image>
+						<image src="../../../static/home/good.png" mode="aspectFit"></image>
 						<h4>靓号推荐</h4>
 					</view>
 					<view class="more">
 						<text>更多</text>
-						<image src="../../../static/home/right.png" mode=""></image>
+						<image src="../../../static/home/right.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<phoneNumber-list></phoneNumber-list>
@@ -66,7 +66,7 @@
 	import banner from '../../../compoents/homepage/banner/banner.vue'
 	import tabrNumber from '../../../compoents/homepage/tabrNumber/tabrNumber.vue'
 	import phoneNumberList from '../../../compoents/homepage/phoneNumber-list/phoneNumber-list.vue'
-	import like from '../../../compoents/homepage/like/like/like.vue'
+	import like from '../../../compoents/homepage/like/like.vue'
 	export default {
 		components: {
 			headPage,

@@ -5,16 +5,14 @@
             "path" : "pages/tabbar/home/home",
             "style" :                                                                                    
             {"navigationStyle":"custom",
-                "navigationBarTitleText": "好数智",
-				"enablePullDownRefresh":true
-            }
-            
+			"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+            } 
         }
         ,{
             "path" : "pages/tabbar/my/my",
             "style" :                                                                                    
             {"navigationStyle":"custom",
-                "navigationBarTitleText": "我的"
+			"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
             
         }
@@ -22,7 +20,7 @@
             "path" : "pages/tabbar/collect/collect",
             "style" :                                                                                    
             {"navigationStyle":"custom",
-                "navigationBarTitleText": "收藏"
+			"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
             
         }
@@ -30,7 +28,7 @@
             "path" : "pages/tabbar/category/category",
             "style" :                                                                                    
             {"navigationStyle":"custom",
-                "navigationBarTitleText": "类别"
+			"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
             
         }
@@ -38,23 +36,12 @@
             "path" : "pages/tabbar/consult/consult",
             "style" :                                                                                    
             {"navigationStyle":"custom",
-                "navigationBarTitleText": "咨询"
+				"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
-            
-        }
-        ,{
-            "path" : "compoents/homepage/like/like/like",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
         }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "好数智",
 		"navigationBarBackgroundColor": "#ea5656",
 		"backgroundColor": "#FFFFFF",
 		"pageOrientation": "portrait",

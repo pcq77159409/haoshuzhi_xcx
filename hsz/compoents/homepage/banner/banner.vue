@@ -1,6 +1,6 @@
 <template>
 	<view class="banner_box">
-		<image src="../../../static/home/banner.png" mode=""></image>
+		<image src="../../../static/home/banner.png" mode="aspectFit"></image>
 	</view>
 </template>
 

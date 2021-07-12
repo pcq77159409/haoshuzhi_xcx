@@ -1,0 +1,8 @@
+{
+  "transparentTitle": "always",
+  "titlePenetrate": "YES",
+  "usingComponents": {
+    "head-page": "/compoents/head/headPage/headPage",
+    "collect-list": "/compoents/collect/collect-list/collect-list"
+  }
+}

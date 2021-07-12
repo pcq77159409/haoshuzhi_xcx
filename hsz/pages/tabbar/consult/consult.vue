@@ -2,11 +2,11 @@
 	<view class="consult_page">
        <headPage :username="'咨询'" class="head"></headPage>
 	   <view class="consult_box">
-		   <image src="../../../static/consult/ke-bg.png" mode=""></image>
+		   <image src="../../../static/consult/ke-bg.png"></image>
 		   <view class="phone">
 				<view class="phone_top">
 					<view class="zixun">
-						<image src="../../../static/consult/gan.png" mode=""></image>
+						<image src="../../../static/consult/gan.png" mode="aspectFit"></image>
 						<text>电话咨询</text>
 					</view>
 					<view class="boda">拨打客服电话</view>
@@ -14,24 +14,24 @@
 				</view>
 				<view class="phone_bottom">
 					<view class="zixun">
-						<image src="../../../static/consult/gan.png" mode=""></image>
+						<image src="../../../static/consult/gan.png" mode="aspectFit"></image>
 						<text>微信咨询</text>
 					</view>
 					<view class="service">
 						<view class="service_page">
-							<image src="../../../static/consult/one-ke.png" mode=""></image>
+							<image src="../../../static/consult/one-ke.png" mode="aspectFit"></image>
 							<text>客服：娇娇</text>
 						</view>
 						<view class="service_page">
-							<image src="../../../static/consult/two-ke.png" mode=""></image>
+							<image src="../../../static/consult/two-ke.png" mode="aspectFit"></image>
 							<text>客服：媛媛</text>
 						</view>
 						<view class="service_page">
-							<image src="../../../static/consult/three-ke.png" mode=""></image>
+							<image src="../../../static/consult/three-ke.png" mode="aspectFit"></image>
 							<text>客服：谈谈</text>
 						</view>
 						<view class="service_page">
-							<image src="../../../static/consult/four-ke.png" mode=""></image>
+							<image src="../../../static/consult/four-ke.png" mode="aspectFit"></image>
 							<text>客服：晗晗</text>
 						</view>
 					</view>

@@ -1,0 +1,1 @@
+<view class="tabr_box"><view class="tab" a:for="{{tabrlist}}" a:for-item="item" a:for-index="index" a:key="index"><image src="{{item.src}}" mode="aspectFit"></image><text>{{item.text}}</text></view></view>

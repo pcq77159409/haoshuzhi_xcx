@@ -1,7 +1,7 @@
 <template>
 	<view class="tabr_box">
 		<view class="tab" v-for="(item,index) in tabrlist" :key="index">
-			<image :src="item.src" mode=""></image>
+			<image :src="item.src" mode="aspectFit"></image>
 			<text>{{item.text}}</text>
 		</view>
 	</view>

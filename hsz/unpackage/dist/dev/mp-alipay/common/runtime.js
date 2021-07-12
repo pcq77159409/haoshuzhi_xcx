@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"compoents/homepage/like/like":1,"compoents/homepage/tabrNumber/tabrNumber":1,"compoents/head/headPage/headPage":1,"compoents/homepage/banner/banner":1,"compoents/homepage/phoneNumber-list/phoneNumber-list":1,"compoents/collect/collect-list/collect-list":1};
+/******/ 		var cssChunks = {"compoents/homepage/like/like":1,"compoents/homepage/tabrNumber/tabrNumber":1,"compoents/head/headPage/headPage":1,"compoents/homepage/banner/banner":1,"compoents/homepage/phoneNumber-list/phoneNumber-list":1,"compoents/collect/collect-list/collect-list":1,"compoents/category/operatorLeft/operatorLeft":1,"compoents/category/operatorRightTop/operatorRightTop":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"compoents/homepage/like/like":"compoents/homepage/like/like","compoents/homepage/tabrNumber/tabrNumber":"compoents/homepage/tabrNumber/tabrNumber","compoents/head/headPage/headPage":"compoents/head/headPage/headPage","compoents/homepage/banner/banner":"compoents/homepage/banner/banner","compoents/homepage/phoneNumber-list/phoneNumber-list":"compoents/homepage/phoneNumber-list/phoneNumber-list","compoents/collect/collect-list/collect-list":"compoents/collect/collect-list/collect-list"}[chunkId]||chunkId) + ".acss";
+/******/ 				var href = "" + ({"compoents/homepage/like/like":"compoents/homepage/like/like","compoents/homepage/tabrNumber/tabrNumber":"compoents/homepage/tabrNumber/tabrNumber","compoents/head/headPage/headPage":"compoents/head/headPage/headPage","compoents/homepage/banner/banner":"compoents/homepage/banner/banner","compoents/homepage/phoneNumber-list/phoneNumber-list":"compoents/homepage/phoneNumber-list/phoneNumber-list","compoents/collect/collect-list/collect-list":"compoents/collect/collect-list/collect-list","compoents/category/operatorLeft/operatorLeft":"compoents/category/operatorLeft/operatorLeft","compoents/category/operatorRightTop/operatorRightTop":"compoents/category/operatorRightTop/operatorRightTop"}[chunkId]||chunkId) + ".acss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

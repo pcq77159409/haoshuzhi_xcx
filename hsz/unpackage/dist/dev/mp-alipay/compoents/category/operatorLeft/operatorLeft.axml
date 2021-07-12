@@ -1,0 +1,1 @@
+<view class="operator_page"><view class="operator_box" a:for="{{operator}}" a:for-item="item" a:for-index="index" a:key="index">{{item}}</view></view>

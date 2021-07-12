@@ -1,5 +1,9 @@
 {
   "transparentTitle": "always",
   "titlePenetrate": "YES",
-  "usingComponents": {}
+  "usingComponents": {
+    "operator-left": "/compoents/category/operatorLeft/operatorLeft",
+    "head-page": "/compoents/head/headPage/headPage",
+    "operator-right-top": "/compoents/category/operatorRightTop/operatorRightTop"
+  }
 }

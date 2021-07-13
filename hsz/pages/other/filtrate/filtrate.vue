@@ -1,0 +1,40 @@
+<template>
+	<view class="filter_page">
+		<view class="filter_red">
+			<view class="filter_move">
+				<image src="../../../static/home/right.png" mode=""></image>
+				<text>移动号码</text>
+			</view>
+			<view class="filter_search">
+				<image src="../../../static/other/dotted.png" mode=""></image>
+				<text>尾号</text>
+				<text></text>
+				<image src="../../../static/home/search.png" mode=""></image>
+				<input type="text" placeholider="搜索您想要的号码" />
+				<view class="">搜索</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+					 
+			};
+		}
+	}
+</script>
+
+<style lang="less">
+	.filter_page {
+		height: 100%;
+		width: 100%;
+		.filter_red {
+			width: 100%;
+			height: 244rpx;
+			background-color: #fe5858;
+		}
+	}
+</style>

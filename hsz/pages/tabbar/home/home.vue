@@ -84,10 +84,6 @@
 </script>
 
 <style lang="less">
-	page {
-		width: 100%;
-		height: 100%;
-	}
 	.home_box {
 		width: 100%;
 		height: 100%;

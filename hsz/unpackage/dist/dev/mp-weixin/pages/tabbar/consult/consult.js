@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var headPage = function headPage() {__webpack_require__.e(/*! require.ensure | compoents/head/headPage/headPage */ "compoents/head/headPage/headPage").then((function () {return resolve(__webpack_require__(/*! @/compoents/head/headPage/headPage.vue */ 49));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var headPage = function headPage() {__webpack_require__.e(/*! require.ensure | compoents/head/headPage/headPage */ "compoents/head/headPage/headPage").then((function () {return resolve(__webpack_require__(/*! @/compoents/head/headPage/headPage.vue */ 55));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

@@ -8150,7 +8150,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 68:
+/***/ 74:
 /*!****************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one.png ***!
   \****************************************************/
@@ -8161,7 +8161,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAADCCAYAAAAb
 
 /***/ }),
 
-/***/ 69:
+/***/ 75:
 /*!****************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/two.png ***!
   \****************************************************/
@@ -8172,7 +8172,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 70:
+/***/ 76:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/three.png ***!
   \******************************************************/
@@ -8183,7 +8183,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 71:
+/***/ 77:
 /*!*****************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/four.png ***!
   \*****************************************************/
@@ -8194,7 +8194,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 72:
+/***/ 78:
 /*!*****************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/five.png ***!
   \*****************************************************/
@@ -8205,7 +8205,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 73:
+/***/ 79:
 /*!****************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/six.png ***!
   \****************************************************/
@@ -8216,7 +8216,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 74:
+/***/ 80:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/seven.png ***!
   \******************************************************/
@@ -8227,7 +8227,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 75:
+/***/ 81:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/eight.png ***!
   \******************************************************/
@@ -8238,7 +8238,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 90:
+/***/ 96:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-1.png ***!
   \******************************************************/
@@ -8249,7 +8249,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApwAAAEgCAIAAACW
 
 /***/ }),
 
-/***/ 91:
+/***/ 97:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-2.png ***!
   \******************************************************/
@@ -8260,7 +8260,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApwAAAEgCAIAAACW
 
 /***/ }),
 
-/***/ 92:
+/***/ 98:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-3.png ***!
   \******************************************************/
@@ -8271,7 +8271,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApwAAAEgCAIAAACW
 
 /***/ }),
 
-/***/ 93:
+/***/ 99:
 /*!******************************************************!*\
   !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-4.png ***!
   \******************************************************/

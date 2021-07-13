@@ -37,6 +37,15 @@
 				"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
         }
+        ,{
+            "path" : "pages/other/filtrate/filtrate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

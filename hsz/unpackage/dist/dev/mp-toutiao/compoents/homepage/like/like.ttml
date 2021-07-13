@@ -1,1 +1,0 @@
-<view class="like_page"><block tt:for="{{imgList}}" tt:for-item="item" tt:for-index="index" tt:key="index"><image src="{{item}}" mode="aspectFit"></image></block></view>

@@ -1,1 +1,0 @@
-<view class="like_page"><image src="{{item}}" mode="aspectFit" a:for="{{imgList}}" a:for-item="item" a:for-index="index" a:key="index"></image></view>

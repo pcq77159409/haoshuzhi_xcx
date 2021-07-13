@@ -1,7 +1,0 @@
-{
-  "transparentTitle": "always",
-  "titlePenetrate": "YES",
-  "usingComponents": {
-    "head-page": "/compoents/head/headPage/headPage"
-  }
-}

@@ -1,1 +1,0 @@
-<view class="category_page"><head-page vue-id="0bbe7822-1" username="类别" bind:__l="__l"></head-page><view class="category_box"><view class="i"><operator-left vue-id="0bbe7822-2" bind:__l="__l"></operator-left></view><view class="o"><operator-right-top vue-id="0bbe7822-3" bind:__l="__l"></operator-right-top></view></view></view>

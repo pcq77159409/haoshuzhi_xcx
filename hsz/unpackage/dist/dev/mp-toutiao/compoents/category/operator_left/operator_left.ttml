@@ -1,1 +1,0 @@
-<view class="operator_page"><block tt:for="{{operator}}" tt:for-item="item" tt:for-index="index" tt:key="index"><view class="operator_box">{{item}}</view></block></view>

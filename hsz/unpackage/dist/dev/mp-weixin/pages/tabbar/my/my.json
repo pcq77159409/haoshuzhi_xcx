@@ -1,4 +1,6 @@
 {
   "navigationStyle": "custom",
-  "usingComponents": {}
+  "usingComponents": {
+    "my_banner": "/compoents/my/my_banner/my_banner"
+  }
 }

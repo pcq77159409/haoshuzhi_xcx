@@ -6,8 +6,7 @@
   width: 100%;
   height: 100%;
   padding: 0 50rpx 0 20rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .syntagma_page .syntagma_box .syntagma {
   width: 100%;
@@ -18,8 +17,7 @@
   -webkit-align-items: center;
           align-items: center;
   padding-top: 39rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .syntagma_page .syntagma_box .syntagma text {
   width: 172rpx;

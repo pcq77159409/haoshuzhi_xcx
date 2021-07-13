@@ -16,8 +16,7 @@ page {
   position: relative;
   border-radius: 6rpx;
   padding: 0 21rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .collect_list_page .collect_list-box image {
   width: 46rpx;

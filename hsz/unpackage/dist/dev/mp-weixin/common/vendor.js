@@ -979,11 +979,6 @@ function initProperties(props) {var isBehavior = arguments.length > 1 && argumen
       type: Object,
       value: null };
 
-    // scopedSlotsCompiler auto
-    properties.scopedSlotsCompiler = {
-      type: String,
-      value: '' };
-
     properties.vueSlots = { // 小程序不能直接定义 $slots 的 props，所以通过 vueSlots 转换到 $slots
       type: null,
       value: [],
@@ -1379,14 +1374,11 @@ function initScopedSlotsParams() {
   };
 
   _vue.default.prototype.$setScopedSlotsParams = function (name, value) {
-    var vueIds = this.$options.propsData.vueId;
-    if (vueIds) {
-      var vueId = vueIds.split(',')[0];
-      var object = center[vueId] = center[vueId] || {};
-      object[name] = value;
-      if (parents[vueId]) {
-        parents[vueId].$forceUpdate();
-      }
+    var vueId = this.$options.propsData.vueId;
+    var object = center[vueId] = center[vueId] || {};
+    object[name] = value;
+    if (parents[vueId]) {
+      parents[vueId].$forceUpdate();
     }
   };
 
@@ -1792,7 +1784,6 @@ function createSubpackageApp(vm) {
   var app = getApp({
     allowDefault: true });
 
-  vm.$scope = app;
   var globalData = app.globalData;
   if (globalData) {
     Object.keys(appOptions.globalData).forEach(function (name) {
@@ -1808,17 +1799,17 @@ function createSubpackageApp(vm) {
   });
   if (isFn(appOptions.onShow) && wx.onAppShow) {
     wx.onAppShow(function () {for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {args[_key5] = arguments[_key5];}
-      vm.__call_hook('onShow', args);
+      appOptions.onShow.apply(app, args);
     });
   }
   if (isFn(appOptions.onHide) && wx.onAppHide) {
     wx.onAppHide(function () {for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {args[_key6] = arguments[_key6];}
-      vm.__call_hook('onHide', args);
+      appOptions.onHide.apply(app, args);
     });
   }
   if (isFn(appOptions.onLaunch)) {
     var args = wx.getLaunchOptionsSync && wx.getLaunchOptionsSync();
-    vm.__call_hook('onLaunch', args);
+    appOptions.onLaunch.call(app, args);
   }
   return vm;
 }
@@ -7526,8 +7517,7 @@ function _diff(current, pre, path, result) {
                 var currentType = type(currentValue);
                 var preType = type(preValue);
                 if (currentType != ARRAYTYPE && currentType != OBJECTTYPE) {
-                    // NOTE 此处将 != 修改为 !==。涉及地方太多恐怕测试不到，如果出现数据对比问题，将其修改回来。
-                    if (currentValue !== pre[key]) {
+                    if (currentValue != pre[key]) {
                         setResult(result, (path == '' ? '' : path + ".") + key, currentValue);
                     }
                 } else if (currentType == ARRAYTYPE) {
@@ -8108,6 +8098,17 @@ internalMixin(Vue);
 
 /***/ }),
 
+/***/ 25:
+/*!*****************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/my/user.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
 /***/ 3:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -8140,9 +8141,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!*******************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/pages.json ***!
-  \*******************************************/
+/*!*********************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/pages.json ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8150,10 +8151,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 68:
-/*!****************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one.png ***!
-  \****************************************************/
+/***/ 71:
+/*!******************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/one.png ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8161,10 +8162,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAADCCAYAAAAb
 
 /***/ }),
 
-/***/ 69:
-/*!****************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/two.png ***!
-  \****************************************************/
+/***/ 72:
+/*!******************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/two.png ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8172,10 +8173,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 70:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/three.png ***!
-  \******************************************************/
+/***/ 73:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/three.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8183,10 +8184,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 71:
-/*!*****************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/four.png ***!
-  \*****************************************************/
+/***/ 74:
+/*!*******************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/four.png ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8194,10 +8195,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 72:
-/*!*****************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/five.png ***!
-  \*****************************************************/
+/***/ 75:
+/*!*******************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/five.png ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8205,10 +8206,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 73:
-/*!****************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/six.png ***!
-  \****************************************************/
+/***/ 76:
+/*!******************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/six.png ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8216,10 +8217,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 74:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/seven.png ***!
-  \******************************************************/
+/***/ 77:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/seven.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8227,10 +8228,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 75:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/eight.png ***!
-  \******************************************************/
+/***/ 78:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/eight.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8238,10 +8239,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADA
 
 /***/ }),
 
-/***/ 90:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-1.png ***!
-  \******************************************************/
+/***/ 93:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/one-1.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8249,10 +8250,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApwAAAEgCAIAAACW
 
 /***/ }),
 
-/***/ 91:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-2.png ***!
-  \******************************************************/
+/***/ 94:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/one-2.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8260,10 +8261,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApwAAAEgCAIAAACW
 
 /***/ }),
 
-/***/ 92:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-3.png ***!
-  \******************************************************/
+/***/ 95:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/one-3.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8271,10 +8272,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApwAAAEgCAIAAACW
 
 /***/ }),
 
-/***/ 93:
-/*!******************************************************!*\
-  !*** E:/小程序/haoshuzhi_xcx/hsz/static/home/one-4.png ***!
-  \******************************************************/
+/***/ 96:
+/*!********************************************************!*\
+  !*** E:/新建文件夹/haoshuzhi_xcx/hsz/static/home/one-4.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

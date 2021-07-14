@@ -1,0 +1,1 @@
+<view class="like_page"><block wx:for="{{imgList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><image src="{{item}}" mode="aspectFit"></image></block></view>

@@ -1,6 +1,6 @@
 <template>
 	<view class="tabr_box">
-		<view class="tab" v-for="(item,index) in tabrlist" :key="index">
+		<view class="tab" v-for="(item,index) in tabrlist" :key="index" @click="onTabr">
 			<image :src="item.src" mode="aspectFit"></image>
 			<text>{{item.text}}</text>
 		</view>
@@ -45,6 +45,14 @@
 					id:8
 				},]
 			};
+		},
+		methods:{
+			onTabr(){
+				uni.navigateTo({
+				    url:"/pages/other/filtrate/filtrate"
+				})
+				console.log(111)
+			}
 		}
 	}
 </script>

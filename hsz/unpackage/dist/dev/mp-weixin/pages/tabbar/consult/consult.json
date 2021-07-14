@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "head-page": "/compoents/head/headPage/headPage"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "linkage": "/compoents/other/linkage/linkage",
+    "phone-number-list": "/compoents/homepage/phoneNumber-list/phoneNumber-list"
+  }
+}

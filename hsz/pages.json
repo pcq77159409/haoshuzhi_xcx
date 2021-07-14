@@ -41,8 +41,8 @@
             "path" : "pages/other/filtrate/filtrate",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationStyle":"custom",
+                "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
             
         }

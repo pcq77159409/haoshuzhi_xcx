@@ -2,26 +2,60 @@
 	<view class="filter_page">
 		<view class="filter_red">
 			<view class="filter_move">
-				<image src="../../../static/home/right.png" mode=""></image>
+				<image src="../../../static/other/left.png" mode="aspectFit"></image>
 				<text>移动号码</text>
 			</view>
 			<view class="filter_search">
-				<image src="../../../static/other/dotted.png" mode=""></image>
-				<text>尾号</text>
-				<text></text>
-				<image src="../../../static/home/search.png" mode=""></image>
-				<input type="text" placeholider="搜索您想要的号码" />
-				<view class="">搜索</view>
+				<view class="end">	
+					<image src="../../../static/other/dotted.png" mode="aspectFit"></image>
+					<text>尾号</text>
+				</view>
+				<text class="line"></text>
+				<view class="want">
+					<image src="../../../static/home/search.png" mode="aspectFit"></image>
+					<input type="text" placeholder="搜索您想要的号码" />
+				</view>
+				<view class="search">搜索</view>
 			</view>
 		</view>
+		<view class="place">
+			<view class="input_box">
+				<input type="text" value="1"/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+				<input type="text" value=""/>
+			</view>
+			<view class="assign">
+				<text>* 请在指定位置上填写数字，无要求的位置可留空</text>
+				<view class="box">
+					<view class="reset">重置</view>
+					<view class="accurate">精准搜索</view>
+				</view>
+			</view>
+		</view>
+		<linkage></linkage>
+		<phoneNumber-list></phoneNumber-list>
 	</view>
 </template>
 
 <script>
+	import linkage from '../../../compoents/other/linkage/linkage.vue'
+	import phoneNumberList from '../../../compoents/homepage/phoneNumber-list/phoneNumber-list.vue'
 	export default {
+		components:{
+			linkage,
+			phoneNumberList
+		},
 		data() {
 			return {
-					 
+				 
 			};
 		}
 	}
@@ -31,10 +65,137 @@
 	.filter_page {
 		height: 100%;
 		width: 100%;
+		background-color: #F8F8F8;
 		.filter_red {
 			width: 100%;
 			height: 244rpx;
 			background-color: #fe5858;
+			.filter_move {
+				display: flex;
+				width: 418rpx;
+				padding: 69rpx 0 0 15rpx;
+				box-sizing: border-box;
+				align-items: center;
+				justify-content: space-between;
+				image {
+					width: 19rpx;
+					height: 31rpx;
+				}
+				text {
+					font-size: 26rpx;
+					color: #FFFFFF;
+					text-align: center;
+				}
+			}
+			.filter_search {
+				width: 690rpx;
+				height: 56rpx;
+				background: url(../../../static/other/input_bg.png) no-repeat;
+				background-size: 690rpx 56rpx;
+				display: flex;
+				margin: 58rpx auto;
+				align-items: center;
+				position: relative;
+				.end {
+					display: flex;
+					align-items: center;
+					margin-left: 30rpx;
+					image {
+						width: 22rpx;
+						height: 22rpx;
+						margin-right: 14rpx;
+						vertical-align: middle;
+						margin-top: 1rpx;
+					}
+					text {
+						font-size: 22rpx;
+						color: #666;
+					}
+				}
+				.line {
+					width: 1rpx;
+					height: 24rpx;
+					background-color: #e0e0e0;
+					margin: 0 32rpx 0 20rpx;
+				}
+				.want {
+					display: flex;
+					align-items: center;
+					image {
+						width: 22rpx;
+						height: 22rpx;
+						margin-right: 14rpx;
+					}
+					input {
+						font-size: 22rpx;
+						color: #999;
+					}
+				}
+				.search {
+					font-size: 24rpx;
+					color: #FFFFFF;
+					position: absolute;
+					right: 20rpx;
+				}
+			}
+		}
+		.place {
+			width: 100%;
+			height: 255rpx;
+			padding: 40rpx 43rpx;
+			box-sizing: border-box;
+			.input_box {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				input {
+					width: 44rpx;
+					height: 52rpx;
+					text-align: center;
+					color: #dc0101;
+					outline: none;
+					border-radius: 6rpx;
+					border: 1rpx solid #cacaca;
+					font-size: 20rpx; 
+				}
+				input:first-child{
+					color: #333333;
+				}
+			}
+			.assign {
+				width: 100%;
+				margin-top: 6rpx;
+				text {
+					font-size: 22rpx;
+					color: #fe5858;
+				}
+				.box {
+					display: flex;
+					justify-content: center;
+					margin-top: 32rpx;
+					.reset {
+						width: 260rpx;
+						height: 52rpx;
+						background-color: #F0EEEE;
+						color: #666666;
+						font-size: 24rpx;
+						text-align: center;
+						line-height: 52rpx;
+						border-radius: 25rpx;
+						margin-right:40rpx ;
+					}
+					.accurate {
+						width: 260rpx;
+						height: 52rpx;
+						background-color: #fe5858;
+						color: #ffffff;
+						font-size: 24rpx;
+						text-align: center;
+						line-height: 52rpx;
+						border-radius: 25rpx;
+					}
+				}
+			}
 		}
 	}
 </style>

@@ -1,0 +1,1 @@
+<view class="linkage"><block wx:for="{{linkage}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="linkage_box"><text>{{item.text}}</text><image src="{{item.src}}" mode="aspectFit"></image></view></block></view>

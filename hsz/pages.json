@@ -46,6 +46,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/other/particulars/particulars",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom",
+                "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

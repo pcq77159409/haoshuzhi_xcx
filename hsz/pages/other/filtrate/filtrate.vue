@@ -55,9 +55,9 @@
 		},
 		data() {
 			return {
-				 
+				
 			};
-		}
+		},
 	}
 </script>
 
@@ -73,7 +73,7 @@
 			.filter_move {
 				display: flex;
 				width: 418rpx;
-				padding: 69rpx 0 0 15rpx;
+				padding: 69rpx 0 0 30rpx;
 				box-sizing: border-box;
 				align-items: center;
 				justify-content: space-between;

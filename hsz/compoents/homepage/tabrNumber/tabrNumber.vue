@@ -51,7 +51,6 @@
 				uni.navigateTo({
 				    url:"/pages/other/filtrate/filtrate"
 				})
-				console.log(111)
 			}
 		}
 	}

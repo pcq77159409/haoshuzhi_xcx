@@ -1,6 +1,6 @@
 <template>
 	<view class="list">
-		<view class="phonelist-box" v-for="(item,index) in phoneList" :key="index">
+		<view class="phonelist-box" v-for="(item,index) in phoneList" :key="index" @click="onClickParticulars">
 			<image src="../../../static/home/矩形%2047@2x.png" mode="aspectFit"></image>
 			<view class="number">{{item.phoneNumber}}</view>
 			<view class="move_box">
@@ -57,6 +57,14 @@
 					price:'700'
 				},]
 			};
+		},
+		methods:{
+			onClickParticulars(){
+				uni.navigateTo({
+				    url:"/pages/other/particulars/particulars"
+				})
+				console.log(111)
+			}
 		}
 	}
 </script>

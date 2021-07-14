@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var my_banner = function my_banner() {__webpack_require__.e(/*! require.ensure | compoents/my/my_banner/my_banner */ "compoents/my/my_banner/my_banner").then((function () {return resolve(__webpack_require__(/*! ../../../compoents/my/my_banner/my_banner.vue */ 107));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var my_banner = function my_banner() {__webpack_require__.e(/*! require.ensure | compoents/my/my_banner/my_banner */ "compoents/my/my_banner/my_banner").then((function () {return resolve(__webpack_require__(/*! ../../../compoents/my/my_banner/my_banner.vue */ 115));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

@@ -5,7 +5,8 @@
     "pages/tabbar/collect/collect",
     "pages/tabbar/category/category",
     "pages/tabbar/consult/consult",
-    "pages/other/filtrate/filtrate"
+    "pages/other/filtrate/filtrate",
+    "pages/other/particulars/particulars"
   ],
   "subPackages": [],
   "window": {

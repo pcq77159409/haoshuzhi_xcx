@@ -13,7 +13,7 @@
   display: -webkit-flex;
   display: flex;
   width: 418rpx;
-  padding: 69rpx 0 0 15rpx;
+  padding: 69rpx 0 0 30rpx;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-align: center;

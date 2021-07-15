@@ -30,11 +30,11 @@
 						<text>钱包余额</text>
 					</view>
 					<view class="m_p_a_c_volume">
-						<image src="../../../static/my/coupon.png" mode=""></image>
+						<image src="../../../static/my/coupon.png" mode="aspectFit"></image>
 						<text>优惠卷</text>
 					</view>
 					<view class="m_p_a_c_integral">
-						<image src="../../../static/my/integral.png" mode=""></image>
+						<image src="../../../static/my/integral.png" mode="aspectFit"></image>
 						<text>积分</text>
 					</view>
 				</view>
@@ -85,7 +85,7 @@
 			</view>
 		</view>
 		<view class="my_bottom">
-			<view>
+			<view @click="onclickTo('/pages/buyer/powerBuyer/powerBuyer')">
 				<image src="../../../static/my/mj.png" mode="aspectFit"></image>
 				生财之道
 			</view>
@@ -121,7 +121,11 @@
 			}
 		},
 		methods: {
-			
+			onclickTo(url){
+				uni.navigateTo({
+				    url
+				})
+			}
 		}
 	}
 </script>

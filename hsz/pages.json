@@ -59,9 +59,45 @@
             "path" : "pages/other/particularsCouple/particularsCouple",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                   "navigationStyle":"custom",
+                   "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
+            
+        },
+		{
+		    "path" : "pages/buyer/audit/audit",
+		    "style" :                                                                                    
+		    {
+		           "navigationStyle":"custom",
+		           "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+		    }
+		    
+		},
+		{
+		    "path" : "pages/buyer/powerBuyer/powerBuyer",
+		    "style" :                                                                                    
+		    {
+		           "navigationStyle":"custom",
+		           "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/buyer/payment/payment",
+            "style" :                                                                                    
+           {
+                  "navigationStyle":"custom",
+                  "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+           }
+            
+        }
+        ,{
+            "path" : "pages/buyer/road/road",
+            "style" :                                                                                    
+         {
+                "navigationStyle":"custom",
+                "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+         }
             
         }
     ],

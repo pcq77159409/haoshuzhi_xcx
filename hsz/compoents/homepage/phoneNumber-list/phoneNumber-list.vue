@@ -63,7 +63,6 @@
 				uni.navigateTo({
 				    url:"/pages/other/particulars/particulars"
 				})
-				console.log(111)
 			}
 		}
 	}

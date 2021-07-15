@@ -1,1 +1,0 @@
-<view class="operator_page"><block wx:for="{{operator}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="operator_box">{{item}}</view></block></view>

@@ -1,7 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "head-page": "/compoents/head/headPage/headPage",
-    "collect-list": "/compoents/collect/collect-list/collect-list"
-  }
-}

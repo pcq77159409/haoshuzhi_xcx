@@ -3,7 +3,7 @@
 		<text>合计:</text>
 		<text>￥400.00</text>
 		<view class="collect">收藏</view>
-		<view class="pay">立即购买</view>
+		<view class="pay">提交订单</view>
 	</view>
 </template>
 

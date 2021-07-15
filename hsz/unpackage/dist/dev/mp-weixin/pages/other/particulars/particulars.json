@@ -1,8 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "red": "/compoents/other/red/red",
-    "particulars": "/compoents/other/particulars/particulars",
-    "partic-bottom": "/compoents/other/particBottom/particBottom"
-  }
-}

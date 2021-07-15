@@ -1,1 +1,0 @@
-<view class="tabr_box"><block wx:for="{{tabrlist}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['onTabr',['$event']]]]]}}" class="tab" bindtap="__e"><image src="{{item.src}}" mode="aspectFit"></image><text>{{item.text}}</text></view></block></view>

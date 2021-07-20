@@ -1,4 +1,5 @@
 <template>
+	<!-- 我的页面轮播图组件 -->
 	<view  class="my_banner">
 		<view class="m_b_image">
 			<image src="../../../static/my/card.png" mode=""></image>

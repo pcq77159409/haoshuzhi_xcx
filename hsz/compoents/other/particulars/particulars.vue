@@ -1,9 +1,10 @@
 <template>
+	<!-- 号码详情组件 -->
 	<view class="particulars_page">
 		<view class="particulars_box">
 			<view class="mobile">
 				<h4>13641968888</h4>
-				<image src="../../../static/other/lian.png" mode=""></image>
+				<image src="../../../static/other/lian.png" mode="aspectFit"></image>
 			</view>
 			<view class="opeara">
 				<text>上海移动</text>
@@ -17,7 +18,7 @@
 		<view class="meal">
 			<text>号码套餐</text>
 			<text>移动花卡宝藏版29元套餐</text>
-			<image src="../../../static/other/right.png" mode=""></image>
+			<image src="../../../static/other/right.png" mode="aspectFit"></image>
 		</view>
 		<view class="food">
 			<view class="meat">

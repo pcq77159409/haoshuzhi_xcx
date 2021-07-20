@@ -1,4 +1,5 @@
 <template>
+	<!-- 手机号列表组件 -->
 	<view class="list">
 		<view class="phonelist-box" v-for="(item,index) in phoneList" :key="index" @click="onClickParticulars">
 			<image src="../../../static/home/矩形%2047@2x.png" mode="aspectFit"></image>

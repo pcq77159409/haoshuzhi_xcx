@@ -1,4 +1,5 @@
 <template>
+	<!-- 类别页右边的组件 -->
 	<view class="syntagma_page">
 		<view class="syntagma_box">
 			<view class="syntagma">

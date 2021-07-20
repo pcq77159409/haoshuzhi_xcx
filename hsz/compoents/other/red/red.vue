@@ -1,5 +1,7 @@
 <template>
+	<!-- 带返回箭头的头部组件 -->
 	<view class="red_page">
+		
 		<image src="../../../static/other/left.png" mode="aspectFit" @click="back"></image>
 		<text>{{username}}</text> 
 	</view>

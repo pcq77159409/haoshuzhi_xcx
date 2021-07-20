@@ -1,4 +1,5 @@
 <template>
+	<!-- 轮播图组件 -->
 	<view class="banner_box">
 		<image src="../../../static/home/banner.png" mode="aspectFit"></image>
 	</view>

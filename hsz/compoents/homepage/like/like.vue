@@ -1,4 +1,5 @@
 <template>
+	<!-- 猜你喜欢组件 -->
 	<view class="like_page">
 		<image :src="item" mode="aspectFit" v-for="(item,index) in imgList" :key="index"></image>
 	</view>

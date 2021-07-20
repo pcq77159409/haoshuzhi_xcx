@@ -1,4 +1,5 @@
 <template>
+	<!-- 收藏列表组件 -->
 	<view class="collect_list_page">
 		<view class="collect_list-box">
 			<image src="../../../static/home/矩形%2047@2x.png" mode="aspectFit"></image>

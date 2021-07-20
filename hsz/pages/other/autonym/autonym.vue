@@ -21,19 +21,19 @@
 		<view class="sheng_page">
 			<view class="please">
 				<view class="up">
-					<image src="../../../static/other/组%2022.png" mode=""></image>
+					<image src="../../../static/other/组%2022.png" mode="aspectFit"></image>
 				</view>
 				<text>请上传身份证正面</text>
 			</view>
 			<view class="pleases">
 				<view class="up">
-					<image src="../../../static/other/组%2022.png" mode=""></image>
+					<image src="../../../static/other/组%2022.png" mode="aspectFit"></image>
 				</view>
 				<text>请上传身份证反面</text>
 			</view>
 			<view class="pleased">
 				<view class="up">
-					<image src="../../../static/other/组%2022.png" mode=""></image>
+					<image src="../../../static/other/组%2022.png" mode="aspectFit"></image>
 				</view>
 				<text>请上传个人自拍照</text>
 			</view>
@@ -42,20 +42,20 @@
 		<view class="buy">
 			<view class="know">购号须知</view>
 			<view class="service">
-				<image src="../../../static/other/11.png" mode=""></image>
+				<image src="../../../static/other/11.png" mode="aspectFit"></image>
 				<h4>请仔细阅读<text>《办理须知》</text>服务条款</h4>
-				<image src="../../../static/other/跳转箭头@2x.png" mode=""></image>
+				<image src="../../../static/other/跳转箭头@2x.png" mode="aspectFit"></image>
 			</view>
 			<view class="service">
-				<image src="../../../static/other/11.png" mode=""></image>
+				<image src="../../../static/other/11.png" mode="aspectFit"></image>
 				<h4>请仔细阅读<text>《入网协议》</text>服务条款</h4>
-				<image src="../../../static/other/跳转箭头@2x.png" mode=""></image>
+				<image src="../../../static/other/跳转箭头@2x.png" mode="aspectFit"></image>
 			</view>
 		</view>
 		<view class="bottom">
 			<text>合计:</text>
 			<text>￥900.00</text>
-			<view class="pay">立即购买</view>
+			<view class="pay" @click="now">立即购买</view>
 		</view>
 	</view>
 </template>
@@ -68,7 +68,11 @@
 		},
 		data() {
 			return {
-				
+				now(){
+					uni.navigateTo({
+						url:'/pages/other/payment/payment'
+					})
+				}
 			};
 		}
 	}

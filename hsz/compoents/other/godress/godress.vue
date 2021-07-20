@@ -1,8 +1,9 @@
 <template>
+	<!-- 收货地址组件 -->
 	<view class="add">
-		<image src="../../../static/other/添加地址.png" mode=""></image>
+		<image src="../../../static/other/添加地址.png" mode="aspectFit"></image>
 		<text>添加收货地址</text>
-		<image src="../../../static/other/跳转箭头@2x.png" mode=""></image>
+		<image src="../../../static/other/跳转箭头@2x.png" mode="aspectFit"></image>
 	</view>
 </template>
 

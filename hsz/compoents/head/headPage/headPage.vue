@@ -1,4 +1,5 @@
 <template>
+	<!-- 不带返回箭头的头部组件 -->
 	<view>
 		<view class="red">{{username}}</view>
 	</view>

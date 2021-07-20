@@ -1,4 +1,5 @@
 <template>
+	<!-- 首页运营商tab切换的组件 -->
 	<view class="tabr_box">
 		<view class="tab" v-for="(item,index) in tabrlist" :key="index" @click="onTabr(item.id)">
 			<image :src="item.src" mode="aspectFit"></image>

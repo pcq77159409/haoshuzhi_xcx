@@ -1,4 +1,5 @@
 <template>
+	<!-- 归属地组件 -->
 	<view class="attra_page">
 		<view class="left_page">
 			<view class="left_box" v-for="(item,index) in leftList" :key="index" @click="onClickShow" :class="{current:flag}">

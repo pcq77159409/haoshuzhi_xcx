@@ -115,6 +115,24 @@
             }
             
         }
+        ,{
+            "path" : "pages/other/payment/payment",
+            "style" :                                                                                    
+            {
+                   "navigationStyle":"custom",
+                   "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+            }
+            
+        }
+        ,{
+            "path" : "pages/other/success/success",
+            "style" :                                                                                    
+            {
+                   "navigationStyle":"custom",
+                   "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

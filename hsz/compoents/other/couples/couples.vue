@@ -1,4 +1,5 @@
 <template>
+	<!-- 情侣号码列表组件 -->
 	<view class="couples_box">
 		<view class="couples_page" @click="tiao">
 			<image src="../../../static/home/矩形%2047@2x.png" mode="aspectFit"></image>

@@ -1,4 +1,5 @@
 <template>
+	<!-- 类别页左边的组件 -->
 	<view class="operator_page">
 		<view class="operator_box" v-for="(item,index) in operator" :key="index">{{item}}</view>
 	</view>

@@ -1,4 +1,5 @@
 <template>
+	<!-- 下拉列表组件 -->
 	<view class="linkage">
 		<view v-for="(item,index) in linkage" :key="index" class="linkage_box" @click="chuan(item.id)">
 			<text>{{item.text}}</text>

@@ -21,7 +21,6 @@
             {"navigationStyle":"custom",
 			"mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
             }
-            
         }
         ,{
             "path" : "pages/tabbar/category/category",
@@ -89,7 +88,6 @@
                   "navigationStyle":"custom",
                   "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
            }
-            
         }
         ,{
             "path" : "pages/buyer/road/road",
@@ -98,6 +96,23 @@
                 "navigationStyle":"custom",
                 "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
          }
+        }
+        ,{
+            "path" : "pages/other/couples/couples",
+            "style" :                                                                                    
+            {
+                   "navigationStyle":"custom",
+                   "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+            }
+            
+        }
+        ,{
+            "path" : "pages/other/autonym/autonym",
+            "style" :                                                                                    
+            {
+                   "navigationStyle":"custom",
+                   "mp-alipay": { "transparentTitle": "always", "titlePenetrate": "YES" }
+            }
             
         }
     ],

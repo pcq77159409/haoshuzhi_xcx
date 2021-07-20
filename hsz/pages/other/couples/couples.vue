@@ -1,7 +1,7 @@
 <template>
 	<view class="filter_page">
 		<view class="filter_red">
-			<red :username="'移动号码'"></red>
+			<red></red>
 			<view class="filter_search">
 				<view class="end">	
 					<image src="../../../static/other/dotted.png" mode="aspectFit"></image>
@@ -37,38 +37,39 @@
 				</view>
 			</view>
 		</view>
-		<linkage @indexId='onClickId'></linkage>
-		<view class="locat" v-show="flag">
-			<attribution></attribution>
+		<view class="linkage">
+			<view v-for="(item,index) in linkage" :key="index" class="linkage_box">
+				<text>{{item.text}}</text>
+				<image :src="item.src" mode="aspectFit"></image>
+			</view>
 		</view>
-		<phoneNumber-list></phoneNumber-list>
+		<couples></couples>
 	</view>
 </template>
 
 <script>
-	import linkage from '../../../compoents/other/linkage/linkage.vue'
-	import phoneNumberList from '../../../compoents/homepage/phoneNumber-list/phoneNumber-list.vue'
-	import attribution from '../../../compoents/other/attribution/attribution.vue'
+	import couples from '../../../compoents/other/couples/couples.vue'
 	import red from '../../../compoents/other/red/red.vue'
 	export default {
-
 		components:{
-			linkage,
-			phoneNumberList,
-			attribution,
+			couples,
 			red
 		},
 		data() {
 			return {
-				flag:false
+				linkage:[{
+					text : '归属地',
+					src : require('../../../static/other/bottom.png')
+				},{
+					text : '运营商',
+					src : require('../../../static/other/bottom.png')
+				},{
+					text : '规律',
+					src : require('../../../static/other/bottom.png')
+				}]
 			};
 		},
 		methods:{
-			onClickId(value){
-				if(value==1){
-					this.flag=1
-				}
-			}
 		}
 	}
 </script>
@@ -77,7 +78,7 @@
 	.filter_page {
 		height: 100%;
 		width: 100%;
-		background-color: #F8F8F8;
+		background-color: #f8f8f8;
 		.filter_red {
 			width: 100%;
 			height: 244rpx;
@@ -192,14 +193,32 @@
 				}
 			}
 		}
-		.locat {
-			width: 100%;
-			height: 769rpx;
-			position: absolute;
-			left: 0;
-			top: 589rpx;
-			background-color: rgba(0,0,0,.3);
-			z-index: 8;
-		}
+		.linkage {
+				width: 100%;
+				height: 66rpx;
+				border: 1px solid #e0e0e0;
+				background-color: #FFFFFF;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin-top: 20rpx;
+				.linkage_box {
+					display: flex;
+					align-items: center;
+					image {
+						width: 16rpx;
+						height: 6rpx;
+						margin-left: 19rpx;
+					}
+					text {
+						font-size: 22rpx;
+						color: #666666;
+					}
+				}
+				.linkage_box:last-child image{
+					width: 20rpx;
+					height: 17rpx;
+				}
+			}
 	}
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<view class="red_page">
-		<image src="../../../static/other/left.png" mode="aspectFit"></image>
-		<text>移动号码</text> 
+		<image src="../../../static/other/left.png" mode="aspectFit" @click="back"></image>
+		<text>{{username}}</text> 
 	</view>
 </template>
 
@@ -9,9 +9,15 @@
 	export default {
 		data() {
 			return {
-				
+				username:''
 			};
-		}
+		},
+		methods:{
+			back(){
+				uni.navigateBack()
+			}
+		},
+		props:['username']
 	}
 </script>
 

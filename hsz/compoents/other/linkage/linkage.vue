@@ -1,6 +1,6 @@
 <template>
 	<view class="linkage">
-		<view v-for="(item,index) in linkage" :key="index" class="linkage_box">
+		<view v-for="(item,index) in linkage" :key="index" class="linkage_box" @click="chuan(item.id)">
 			<text>{{item.text}}</text>
 			<image :src="item.src" mode="aspectFit"></image>
 		</view>
@@ -13,18 +13,27 @@
 			return {
 				linkage:[{
 					text : '归属地',
-					src : require('../../../static/other/bottom.png')
+					src : require('../../../static/other/bottom.png'),
+					id:1
 				},{
 					text : '运营商',
-					src : require('../../../static/other/bottom.png')
+					src : require('../../../static/other/bottom.png'),
+					id:2
 				},{
 					text : '规律',
-					src : require('../../../static/other/bottom.png')
+					src : require('../../../static/other/bottom.png'),
+					id:3
 				},{
 					text : '筛选',
-					src : require('../../../static/other/filter.png')
+					src : require('../../../static/other/filter.png'),
+					id:4
 				},]
 			};
+		},
+		methods:{
+			chuan(id) {
+				this.$emit('indexId',id) 
+			}
 		}
 	}
 </script>

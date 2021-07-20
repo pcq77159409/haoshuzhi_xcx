@@ -1,6 +1,6 @@
 <template>
 	<view class="tabr_box">
-		<view class="tab" v-for="(item,index) in tabrlist" :key="index" @click="onTabr">
+		<view class="tab" v-for="(item,index) in tabrlist" :key="index" @click="onTabr(item.id)">
 			<image :src="item.src" mode="aspectFit"></image>
 			<text>{{item.text}}</text>
 		</view>
@@ -47,10 +47,17 @@
 			};
 		},
 		methods:{
-			onTabr(){
-				uni.navigateTo({
-				    url:"/pages/other/filtrate/filtrate"
-				})
+			onTabr(id){
+				console.log(id)
+				if(id==6){
+					uni.navigateTo({
+					    url:"/pages/other/couples/couples"
+					})
+				}else{
+					uni.navigateTo({
+					    url:"/pages/other/filtrate/filtrate"
+					})
+				}
 			}
 		}
 	}
